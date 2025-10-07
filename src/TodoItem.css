@@ -1,39 +1,53 @@
 .todo-item {
+    /* Main background remains white for contrast */
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     margin: 10px 0;
+    /* Changed box-shadow color to a softer blue */
     border-radius: 5px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(41, 128, 185, 0.15); /* Soft Blue Shadow */
     transition: transform 0.2s ease, background-color 0.3s ease;
-  }
-  
-  .todo-item:hover {
+}
+
+.todo-item:hover {
+    /* Added a very light blue background on hover */
+    background-color: #ecf0f1; /* Very Light Gray/Blue */
     transform: scale(1.02);
-  }
-  
-  .completed .todo-task {
+}
+
+.completed .todo-task {
     text-decoration: line-through;
-    color: #7f8c8d;
-  }
-  
-  .todo-task {
+    /* Muted text color for completed tasks */
+    color: #95a5a6; /* Softer Gray */
+}
+
+.todo-task {
+    /* Changed default task text color to a deep blue */
+    color: #2c3e50; /* Deep Blue Text */
     cursor: pointer;
-  }
-  
-  .delete-task-button {
-    background-color: #e74c3c;
+}
+
+.delete-task-button {
+    /* Primary delete button color changed to a vibrant red-orange for urgency */
+    background-color: #f39c12; /* Sun Flower Yellow/Orange */
     border: none;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .delete-task-button:hover {
-    background-color: #c0392b;
-  }
-  
+}
+
+.delete-task-button:hover {
+    /* Darker shade of the button color on hover */
+    background-color: #e67e22; /* Carrot Orange */
+}
+
+/* Optional addition for a 'complete' state if you had a button/icon for it */
+.complete-button {
+    background-color: #2ecc71; /* Emerald Green */
+    /* ... other styles ... */
+}
